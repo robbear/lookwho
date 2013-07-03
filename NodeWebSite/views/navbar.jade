@@ -1,0 +1,16 @@
+.navbar.navbar-inverse.navbar-fixed-top
+	.navbar-inner
+		.container-fluid
+			button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a.brand(href='/') CS Tablet
+			.nav-collapse.collapse
+				ul.nav
+					li.active
+						a(href='/') Home
+if login_fail
+	.alert.alert-error
+		button.close(type='button', data-dismiss='alert') Ã—
+		strong Invalid email password combination.
